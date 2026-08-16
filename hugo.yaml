@@ -1,0 +1,97 @@
+baseURL: https://avonlyn.github.io/
+title: AvonLyn 的博客
+theme: PaperMod
+
+defaultContentLanguage: zh
+locale: zh-CN
+timeZone: Asia/Shanghai
+
+enableRobotsTXT: true
+
+pagination:
+  pagerSize: 10
+
+# 首页额外输出 JSON（PaperMod 站内搜索依赖 /index.json）
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
+
+taxonomies:
+  tag: tags
+  category: categories
+
+menu:
+  main:
+    - identifier: archives
+      name: 归档
+      url: /archives/
+      weight: 10
+    - identifier: search
+      name: 搜索
+      url: /search/
+      weight: 20
+    - identifier: tags
+      name: 标签
+      url: /tags/
+      weight: 30
+    - identifier: categories
+      name: 分类
+      url: /categories/
+      weight: 40
+    - identifier: about
+      name: 关于
+      url: /about/
+      weight: 50
+
+params:
+  env: production
+  author: AvonLyn
+  description: AvonLyn 的个人博客
+  DateFormat: "2006-01-02"
+  defaultTheme: auto
+
+  ShowReadingTime: true
+  ShowWordCount: true
+  ShowShareButtons: true
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: true
+  ShowToc: true
+  TocOpen: false
+  comments: true
+
+  # 首页 Profile 模式；想加头像就把图片放到 assets/images/ 并取消下面两行注释
+  profileMode:
+    enabled: true
+    title: AvonLyn 的博客
+    subtitle: 记录技术、生活与思考
+    # imageUrl: images/avatar.png
+    # imageTitle: 头像
+    buttons:
+      - name: 归档
+        url: archives/
+      - name: 标签
+        url: tags/
+
+  socialIcons:
+    - name: github
+      url: https://github.com/AvonLyn
+    - name: rss
+      url: index.xml
+
+  # 站内搜索（Fuse.js）参数
+  fuseOpts:
+    isCaseSensitive: false
+    shouldSort: true
+    location: 0
+    distance: 1000
+    threshold: 0.4
+    minMatchCharLength: 0
+    limit: 10
+    keys:
+      - title
+      - permalink
+      - summary
+      - content
