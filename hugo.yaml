@@ -62,13 +62,13 @@ params:
   TocOpen: false
   comments: true
 
-  # 首页 Profile 模式；想加头像就把图片放到 assets/images/ 并取消下面两行注释
+  # 首页 Profile 模式（头像源文件在 assets/images/avatar.png，构建时自动缩放为 150x150）
   profileMode:
     enabled: true
     title: AvonLyn 的博客
     subtitle: 记录技术、生活与思考
-    # imageUrl: images/avatar.png
-    # imageTitle: 头像
+    imageUrl: images/avatar.png
+    imageTitle: AvonLyn 的头像
     buttons:
       - name: 归档
         url: archives/
