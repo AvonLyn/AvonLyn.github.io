@@ -1,6 +1,6 @@
 ---
-title: "归档"
+title: "时间线"
 layout: "archives"
 url: "/archives/"
-summary: "archives"
+summary: "时间线"
 ---

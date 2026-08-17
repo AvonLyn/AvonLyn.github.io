@@ -25,7 +25,7 @@ taxonomies:
 menu:
   main:
     - identifier: archives
-      name: 归档
+      name: 时间线
       url: /archives/
       weight: 10
     - identifier: search
@@ -70,7 +70,7 @@ params:
     imageUrl: images/avatar.png
     imageTitle: AvonLyn 的头像
     buttons:
-      - name: 归档
+      - name: 时间线
         url: archives/
       - name: 标签
         url: tags/
